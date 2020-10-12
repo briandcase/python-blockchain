@@ -1,12 +1,16 @@
 import time
+import os
 
 from pubnub.pubnub import PubNub
 from pubnub.pnconfiguration import PNConfiguration
 from pubnub.callbacks import SubscribeCallback
+from dotenv import load_dotenv
+
+load_dotenv()
 
 pnconfig = PNConfiguration()
-pnconfig.subscribe_key = 'sub-c-ea816314-0c96-11eb-8b70-9ebeb8f513a7'
-pnconfig.publish_key = 'pub-c-a07d28c5-a4bb-43bc-bc14-ca2f543d3cfc'
+pnconfig.subscribe_key = os.getenv("SUBSCRIBE_KEY")
+pnconfig.publish_key = os.getenv("PUBLISH_KEY")
 
 CHANNELS = {
     'TEST': 'TEST',
