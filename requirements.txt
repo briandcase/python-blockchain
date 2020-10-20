@@ -4,3 +4,4 @@ pubnub
 python-dotenv
 requests
 cryptography
+Flask-Cors==3.0.9
