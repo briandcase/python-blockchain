@@ -40,3 +40,26 @@ In the frontend directory:
 ```
 npm run start
 ```
+
+**Seed the backend with data**
+Make sure to activate the virtual environment.
+
+```
+export SEED_DATA=True && python3 -m backend.app
+```
+
+**TODO**
+
+```
+Synchronization without the root node.
+
+API endpoints that read more information.
+
+Catching up a blockchain that's fallend behind.
+
+Transaction pool validating transactions.
+
+Applications for non miners.
+
+Frontend functionality and styling.
+```
